@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  header nav {
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .active {
+    color: $main-active;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+
+
+  /**
+  - big-box
+  - small-box
+  - switch
+  - rounded-box
+  - dotted-box
+  - creation-form
+  - 3 type of progress-bar (small-rounded, big-rounded, col-oriented
+  */

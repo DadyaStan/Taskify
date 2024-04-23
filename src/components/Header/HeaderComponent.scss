@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    .side-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

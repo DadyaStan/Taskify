@@ -1,0 +1,36 @@
+@import "../../index";
+
+.menu {
+    background-color: #020202;
+    width: 76px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    &__nav {
+        margin: 35px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    p, a {
+        color: #fff;
+    }
+
+    &__svg {
+        width: 24px;
+        height: 24px;
+        fill: #fff
+    }
+    // переделать по бему в модификатор
+    .active-link {
+        svg {
+            fill: $main-active;
+        }
+    }
+}
