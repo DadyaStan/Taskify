@@ -9,6 +9,7 @@ export default function MainDashboardPage() {
   return (
     <div className="container">
       <HeaderComponent />
+      
       <div className="main-dashboard">
         <div className="main-dashboard__left-side">
           <MainProgressBox />
