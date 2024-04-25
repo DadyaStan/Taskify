@@ -5,6 +5,10 @@
     justify-content: space-between;
     margin-bottom: 35px;
 
+    &__heading {
+        font-weight: 500;
+    }
+
     .side-menu {
         display: flex;
         flex-direction: row;

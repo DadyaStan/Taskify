@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import HeaderComponent from "../../components/Header/HeaderComponent";
 import MainProgressBox from "../../components/MainProgressBox/MainProgressBox";
@@ -8,8 +9,7 @@ import "./MainDashboardPage.scss";
 export default function MainDashboardPage() {
   return (
     <div className="container">
-      <HeaderComponent />
-      
+      <HeaderComponent heading="Manager Dashboard" />
       <div className="main-dashboard">
         <div className="main-dashboard__left-side">
           <MainProgressBox />

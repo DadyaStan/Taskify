@@ -2,13 +2,16 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 
 import MainDashboardPage from "./pages/MainDashboard/MainDashboardPage";
-import SchedulePage from "./pages/SchedulePage";
-import TaskManagerPage from "./pages/TaskManagerPage";
-import ManagementPage from "./pages/ManagementPage";
+import SchedulePage from "./pages/Schedule/SchedulePage";
+import TaskManagerPage from "./pages/TaskManager/TaskManagerPage";
+import ManagementPage from "./pages/ManagerDashboard/ManagementPage";
+
+import TestPage from "./pages/TestPage";
 
 import Layout from "./components/Layout";
 
 // App.js устанавливает аутентификацию и маршрутизацию
+// Отсмотреть, почему здесь <> </> тег
 function App() {
   return (
     <>
@@ -18,6 +21,7 @@ function App() {
             <Route path="/schedule" element={<SchedulePage />} />
             <Route path="/manager" element={<TaskManagerPage />} />
             <Route path="/management" element={<ManagementPage />} />
+            <Route path="/test" element={<TestPage />} />
           </Route>
       </Routes>
     </> 
