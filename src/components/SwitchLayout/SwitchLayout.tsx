@@ -1,10 +1,14 @@
-
+import "./SwitchLayout.scss"
 
 export default function SwitchLayout() {
     return (
         <div>
-            <div>switch 1</div>
-            <div>switch 2</div>
+            <div className="switch-menu">
+                <div className="switch-menu__section">Design</div>
+                <div className="switch-menu__section">Front-End</div>
+                <div className="switch-menu__section">Back-End</div>
+                <div className="switch-menu__section">QA</div>
+            </div>
         </div>
     );
 }

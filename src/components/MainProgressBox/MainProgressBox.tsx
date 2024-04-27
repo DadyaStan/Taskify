@@ -8,12 +8,12 @@ function MainProgressBox() {
                 Project Status
             </div>
             <div className="info-box__progress">
-                <h3 className="big-text">
+                {/* <h3 className="big-text">
                     28/34
                 </h3>
                 <p className="reg-text">
                     65% tasks complited
-                </p>
+                </p> */}
             </div>
         </div>
     )

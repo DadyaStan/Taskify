@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 
 import MainDashboardPage from "./pages/MainDashboard/MainDashboardPage";
-import SchedulePage from "./pages/Schedule/SchedulePage";
-import TaskManagerPage from "./pages/TaskManager/TaskManagerPage";
+import SchedulePage from "./pages/TaskManager/TaskManagerPage";
+import TaskManagerPage from "./pages/Schedule/SchedulePage";
 import ManagementPage from "./pages/ManagerDashboard/ManagementPage";
 
 import TestPage from "./pages/TestPage";
