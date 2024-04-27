@@ -1,13 +1,21 @@
 import "./SwitchLayout.scss"
 
-export default function SwitchLayout() {
+interface SwitchProps {
+    design: string,
+    front: string,
+    back: string,
+    qa: string
+}
+
+export default function SwitchLayout({ switchList }: { switchList: String[] }) {
     return (
         <div>
             <div className="switch-menu">
-                <div className="switch-menu__section">Design</div>
-                <div className="switch-menu__section">Front-End</div>
-                <div className="switch-menu__section">Back-End</div>
-                <div className="switch-menu__section">QA</div>
+                {switchList.map(
+                    (prop) => (
+                        <div className="switch-menu__section">{prop}</div>
+                    )
+                )}
             </div>
         </div>
     );

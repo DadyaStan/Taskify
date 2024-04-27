@@ -7,11 +7,20 @@ import MainProgressBox from "../../components/MainProgressBox/MainProgressBox"
 
 import "./TaskManager.scss";
 
+type SwitchProps = {
+  design: string,
+  front: string,
+  back: string,
+  qa: string
+}
+
 export default function TaskManagerPage() {
+  const links: String[] = ['Design', 'Front-End', 'Back-End', 'QA']
+
   return (
     <div className="container">
       <HeaderComponent heading="Task Manager" />
-      <SwitchLayout />
+      <SwitchLayout switchList={links}/>
       <div className="task-manager">
         <div className="task-manager__col">
           <div className="task-manager__stage">
