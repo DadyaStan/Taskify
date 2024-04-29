@@ -1,11 +1,12 @@
 @import "../../index.scss";
 
 .switch-menu {
-    width: 640px;
+    width: 680px;
     height: 50px;
     border: 2px solid $main-black;
     border-radius: 40px;
     display: flex;
+    flex: 0 auto;
     flex-direction: row;
     align-items: center;
     margin-bottom: 40px;
@@ -15,31 +16,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 160px;
+        width: 170px;
         font-weight: 500;
         border-radius: 40px;
 
-        &:active {
-            color: #fff;
-            background-color: $main-black;
+        a {
+            color: #020202;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            
+            &:active {
+                color: #fff;
+                background-color: $main-black;
+            }
         }
     }
 }
-
-
-
-// .switch-menu {
-//     width: 50%;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     gap: 20px;
-//     margin-bottom: 35px;
-
-//     &__section {
-//         width: 50%;
-//         height: 66px;
-//         background-color: $main-grey;
-//         border-radius: 33px;
-//     }
-// }

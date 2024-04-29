@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./SwitchLayout.scss"
 
 interface SwitchProps {
@@ -7,16 +9,23 @@ interface SwitchProps {
     qa: string
 }
 
-export default function SwitchLayout({ switchList }: { switchList: String[] }) {
+export default function SwitchLayout() {
     return (
         <div>
             <div className="switch-menu">
-                {switchList.map(
-                    (prop) => (
-                        <div className="switch-menu__section">{prop}</div>
-                    )
-                )}
+                <div className="switch-menu__section">
+                    <Link to='design'>Design</Link>
+                </div>
+                <div className="switch-menu__section">
+                    <Link to='front-end'>Front-End</Link>
+                </div>
+                <div className="switch-menu__section">
+                    <Link to='back-end'>Back-End</Link>
+                </div>
+                <div className="switch-menu__section">
+                    <Link to='qa'>QA</Link>
+                </div>
             </div>
-        </div>
+        </div >
     );
 }

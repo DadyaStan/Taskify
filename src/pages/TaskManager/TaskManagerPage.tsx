@@ -1,9 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Path } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom"
 
 import HeaderComponent from "../../components/Header/HeaderComponent"
 import SwitchLayout from "../../components/SwitchLayout/SwitchLayout"
 import MainProgressBox from "../../components/MainProgressBox/MainProgressBox"
+
+import DesignPage from "./subpages/DesignPage"
+import FrontEndPage from "./subpages/FrontEndPage"
+import BackEndPage from "./subpages/BackEndPage"
+import QAPage from "./subpages/QAPage"
+
 
 import "./TaskManager.scss";
 
@@ -15,43 +22,14 @@ type SwitchProps = {
 }
 
 export default function TaskManagerPage() {
-  const links: String[] = ['Design', 'Front-End', 'Back-End', 'QA']
+  //const directions: String[] = ['Design', 'Front-End', 'Back-End', 'QA']
+  //const links = ['design', 'front-end', 'back-end', 'QA']
 
   return (
     <div className="container">
       <HeaderComponent heading="Task Manager" />
-      <SwitchLayout switchList={links}/>
-      <div className="task-manager">
-        <div className="task-manager__col">
-          <div className="task-manager__stage">
-            <p>To Do</p>
-            <p>12</p>
-          </div>
-          <MainProgressBox />
-          <MainProgressBox />
-        </div>
-        <div className="task-manager__col">
-          <div className="task-manager__stage">
-            <p>In Progress</p>
-            <p>12</p>
-          </div>
-          <MainProgressBox />
-        </div>
-        <div className="task-manager__col">
-          <div className="task-manager__stage">
-            <p>Review</p>
-            <p>12</p>
-          </div>
-          <MainProgressBox />
-        </div>
-        <div className="task-manager__col">
-          <div className="task-manager__stage">
-            <p>Done</p>
-            <p>12</p>
-          </div>
-          <MainProgressBox />
-        </div>
-      </div>
+      <SwitchLayout />
+      <Outlet />
     </div>
   );
 }
