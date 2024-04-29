@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./SwitchLayout.scss"
 
@@ -9,21 +9,31 @@ interface SwitchProps {
     qa: string
 }
 
+const setActiveLinkTaskManager = ({ isActive }: any): string => isActive ? ' -switch-link -switch-link_active' : '-switch-link';
+
 export default function SwitchLayout() {
     return (
         <div>
             <div className="switch-menu">
                 <div className="switch-menu__section">
-                    <Link to='design'>Design</Link>
+                    <NavLink to='design' className={setActiveLinkTaskManager}>
+                        Design
+                    </NavLink>
                 </div>
                 <div className="switch-menu__section">
-                    <Link to='front-end'>Front-End</Link>
+                    <NavLink to='front-end' className={setActiveLinkTaskManager}>
+                        Front-End
+                    </NavLink>
                 </div>
                 <div className="switch-menu__section">
-                    <Link to='back-end'>Back-End</Link>
+                    <NavLink to='back-end' className={setActiveLinkTaskManager}>
+                        Back-end
+                    </NavLink>
                 </div>
                 <div className="switch-menu__section">
-                    <Link to='qa'>QA</Link>
+                    <NavLink to='qa' className={setActiveLinkTaskManager}>
+                        QA
+                    </NavLink>
                 </div>
             </div>
         </div >
