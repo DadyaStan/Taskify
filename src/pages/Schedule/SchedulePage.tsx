@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 
 import HeaderComponent from "../../components/Header/HeaderComponent";
+import SwitchSchedulePage from "../../components/SwitchSchedulePage/SwitchSchedulePage";
 
 export default function SchedulePage() {
   return (
     <div className="container">
       <HeaderComponent heading="April, 2024" />
-      
-      <div className="main-dashboard">
-
-      </div>
+      <SwitchSchedulePage />
+      <Outlet />
     </div>
   );
 }

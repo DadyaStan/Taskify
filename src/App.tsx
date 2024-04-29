@@ -11,6 +11,9 @@ import FrontEndPage from "./pages/TaskManager/subpages/FrontEndPage"
 import BackEndPage from "./pages/TaskManager/subpages/BackEndPage"
 import QAPage from "./pages/TaskManager/subpages/QAPage"
 
+import TimelinePage from "./pages/Schedule/subpages/Timeline/TimelinePage"
+import CalendarPage from "./pages/Schedule/subpages/Calendar/CalendarPage"
+
 import TestPage from "./pages/TestPage";
 
 import Layout from "./components/Layout";
@@ -29,7 +32,10 @@ function App() {
             <Route path="back-end" element={<BackEndPage />} />
             <Route path="qa" element={<QAPage />} />
           </Route>
-          <Route path="schedule" element={<SchedulePage />} />
+          <Route path="schedule/*" element={<SchedulePage />}>
+            <Route path="timeline" element={<TimelinePage />}/>
+            <Route path="calendar" element={<CalendarPage />}/>
+          </Route>
           <Route path="management" element={<ManagementPage />} />
           <Route path="test" element={<TestPage />} />
         </Route>

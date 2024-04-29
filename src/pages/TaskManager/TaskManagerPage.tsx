@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, Path } from "react-router-dom";
-import { Routes, Route, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 
 import HeaderComponent from "../../components/Header/HeaderComponent"
-import SwitchLayout from "../../components/SwitchLayout/SwitchLayout"
+import SwitchTasksPage from "../../components/SwitchTasksPage/SwitchTasksPage"
 import MainProgressBox from "../../components/MainProgressBox/MainProgressBox"
 
 import DesignPage from "./subpages/DesignPage"
@@ -28,7 +28,7 @@ export default function TaskManagerPage() {
   return (
     <div className="container">
       <HeaderComponent heading="Task Manager" />
-      <SwitchLayout />
+      <SwitchTasksPage />
       <Outlet />
     </div>
   );
