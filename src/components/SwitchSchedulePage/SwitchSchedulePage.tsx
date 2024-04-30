@@ -8,13 +8,13 @@ function SwitchSchedulePage() {
     return (
         <div className="switch-schedule-nav">
             <div className="switch-schedule-nav__section">
-                <NavLink to='timeline' className={setActiveLinkTaskManager}>
-                    Timeline
+                <NavLink to='calendar' className={setActiveLinkTaskManager}>
+                    Calendar
                 </NavLink>
             </div>
             <div className="switch-schedule-nav__section">
-                <NavLink to='calendar' className={setActiveLinkTaskManager}>
-                    Calendar
+                <NavLink to='timeline' className={setActiveLinkTaskManager}>
+                    Timeline
                 </NavLink>
             </div>
         </div>

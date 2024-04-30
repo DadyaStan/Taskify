@@ -1,0 +1,40 @@
+@import "index.scss";
+
+.calendar-page {
+
+    &__date-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .day-box {
+            font-size: 26px;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 2px solid $main-black;
+
+            &__span {
+                font-size: 14px;
+            }
+        } 
+    }
+
+    &__workflow {
+        display: grid;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__cell {
+        text-align: center;
+        width: 15%;
+        padding: 20px;
+        border-right: 2px solid $main-grey;
+    }
+}
