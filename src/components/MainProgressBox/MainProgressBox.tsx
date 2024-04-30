@@ -1,4 +1,3 @@
-
 import './MainProgressBox.scss';
 
 function MainProgressBox() { 

@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom"
 
-import HeaderComponent from "../../components/Header/HeaderComponent";
-import SwitchSchedulePage from "../../components/SwitchSchedulePage/SwitchSchedulePage";
+import HeaderComponent from "components/Header/HeaderComponent";
+import SwitchSchedulePage from "components/SwitchSchedulePage/SwitchSchedulePage";
 
 export default function SchedulePage() {
   return (

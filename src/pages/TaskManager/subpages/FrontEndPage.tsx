@@ -1,4 +1,4 @@
-import TaskCard from "../../../components/TaskCard/TaskCard"
+import TaskCard from "components/TaskCard/TaskCard"
 
 import "../TaskManager.scss";
 

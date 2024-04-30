@@ -1,22 +1,22 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 
-import MainDashboardPage from "./pages/MainDashboard/MainDashboardPage";
-import TaskManagerPage from "./pages/TaskManager/TaskManagerPage";
-import SchedulePage from "./pages/Schedule/SchedulePage";
-import ManagementPage from "./pages/ManagerDashboard/ManagementPage";
+import MainDashboardPage from "pages/MainDashboard/MainDashboardPage";
+import TaskManagerPage from "pages/TaskManager/TaskManagerPage";
+import SchedulePage from "pages/Schedule/SchedulePage";
+import ManagementPage from "pages/ManagerDashboard/ManagementPage";
 
-import DesignPage from "./pages/TaskManager/subpages/DesignPage"
-import FrontEndPage from "./pages/TaskManager/subpages/FrontEndPage"
-import BackEndPage from "./pages/TaskManager/subpages/BackEndPage"
-import QAPage from "./pages/TaskManager/subpages/QAPage"
+import DesignPage from "pages/TaskManager/subpages/DesignPage"
+import FrontEndPage from "pages/TaskManager/subpages/FrontEndPage"
+import BackEndPage from "pages/TaskManager/subpages/BackEndPage"
+import QAPage from "pages/TaskManager/subpages/QAPage"
 
-import TimelinePage from "./pages/Schedule/subpages/Timeline/TimelinePage"
-import CalendarPage from "./pages/Schedule/subpages/Calendar/CalendarPage"
+import TimelinePage from "pages/Schedule/subpages/Timeline/TimelinePage"
+import CalendarPage from "pages/Schedule/subpages/Calendar/CalendarPage"
 
-import TestPage from "./pages/TestPage";
+import TestPage from "pages/TestPage";
 
-import Layout from "./components/Layout";
+import Layout from "components/Layout";
 
 // App.js устанавливает аутентификацию и маршрутизацию
 // Отсмотреть, почему здесь <> </> тег

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import MenuComponent from "./Menu/MenuComponent";
+import MenuComponent from "components/Menu/MenuComponent";
 
 import "./Layout.scss";
 

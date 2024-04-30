@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
 
-import HeaderComponent from "../../components/Header/HeaderComponent";
+import HeaderComponent from "components/Header/HeaderComponent";
 
 export default function ManagementPage() {
   return (

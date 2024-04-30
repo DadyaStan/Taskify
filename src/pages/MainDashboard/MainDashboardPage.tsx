@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import HeaderComponent from "../../components/Header/HeaderComponent";
-import MainProgressBox from "../../components/MainProgressBox/MainProgressBox";
+import HeaderComponent from "components/Header/HeaderComponent";
+import MainProgressBox from "components/MainProgressBox/MainProgressBox";
 
 import "./MainDashboardPage.scss";
 //попробовать убрать контейнер и сделать через <> </>

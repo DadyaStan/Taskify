@@ -2,14 +2,14 @@ import React from "react";
 import { Link, Path } from "react-router-dom";
 import { Outlet } from "react-router-dom"
 
-import HeaderComponent from "../../components/Header/HeaderComponent"
-import SwitchTasksPage from "../../components/SwitchTasksPage/SwitchTasksPage"
-import MainProgressBox from "../../components/MainProgressBox/MainProgressBox"
+import HeaderComponent from "components/Header/HeaderComponent"
+import SwitchTasksPage from "components/SwitchTasksPage/SwitchTasksPage"
+import MainProgressBox from "components/MainProgressBox/MainProgressBox"
 
-import DesignPage from "./subpages/DesignPage"
-import FrontEndPage from "./subpages/FrontEndPage"
-import BackEndPage from "./subpages/BackEndPage"
-import QAPage from "./subpages/QAPage"
+import DesignPage from "pages/TaskManager/subpages/DesignPage"
+import FrontEndPage from "pages/TaskManager/subpages/FrontEndPage"
+import BackEndPage from "pages/TaskManager/subpages/BackEndPage"
+import QAPage from "pages/TaskManager/subpages/QAPage"
 
 
 import "./TaskManager.scss";
