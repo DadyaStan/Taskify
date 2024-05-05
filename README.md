@@ -40,3 +40,9 @@ css модули попробовать... Редукс прикрутить
 
 # RoadMap
 - Основы react + typescript
+
+# API to redux
+- getTasks
+- setTasks
+- setUpdateTask
+- 
